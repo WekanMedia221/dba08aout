@@ -857,13 +857,27 @@ button {
 }
 
 .flash-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   font-family: var(--font-heading);
   font-size: 0.8rem;
   letter-spacing: 0.15em;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   text-transform: uppercase;
+}
+
+.flash-icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--accent-gold-dark);
+  stroke-width: 2;
+  fill: none;
+}
+
+.flash-info-card.featured-gold .flash-icon {
+  stroke: #FFFFFF !important;
 }
 
 .flash-title {
@@ -1053,8 +1067,24 @@ button {
 }
 
 .pain-icon {
-  font-size: 1.4rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: rgba(200, 162, 76, 0.12);
+  border: 1px solid rgba(200, 162, 76, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  color: var(--accent-gold-dark);
+}
+
+.pain-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--accent-gold-dark);
+  stroke-width: 2;
+  fill: none;
 }
 
 .pain-card p {
