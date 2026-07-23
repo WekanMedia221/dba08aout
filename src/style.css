@@ -768,9 +768,9 @@ button {
   gap: 2.2rem;
   background: rgba(6, 14, 33, 0.9);
   border: 2px solid var(--accent-gold);
-  padding: 1.2rem 3rem;
+  padding: 1rem 2.5rem;
   border-radius: 50px;
-  margin-bottom: 2.5rem;
+  margin: 1.5rem auto 0;
   box-shadow: var(--shadow-dark), 0 0 25px rgba(200, 162, 76, 0.15);
   backdrop-filter: blur(10px);
 }
