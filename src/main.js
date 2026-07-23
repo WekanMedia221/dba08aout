@@ -273,13 +273,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // B. Weighted Intersection Observer Entrance Animations
+  // B. Weighted Intersection Observer Entrance Animations (Fail-Safe & Instant Reveal)
+  document.documentElement.classList.add('js-reveal-active');
   const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+  const checkViewportReveal = () => {
+    revealElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= (window.innerHeight || document.documentElement.clientHeight) + 150) {
+        el.classList.add('is-visible');
+      }
+    });
+  };
+
   if ('IntersectionObserver' in window) {
     const observerOptions = {
       root: null,
-      rootMargin: '0px 0px -50px 0px',
-      threshold: 0.15
+      rootMargin: '100px 0px 100px 0px',
+      threshold: 0.01
     };
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -292,9 +303,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     revealElements.forEach(el => revealObserver.observe(el));
+    checkViewportReveal();
   } else {
     revealElements.forEach(el => el.classList.add('is-visible'));
   }
+
+  // Failsafe timer: ensures ALL elements are 100% visible after 600ms regardless of scroll state
+  setTimeout(() => {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  }, 600);
 
   // C. Spotlight Mouse Cursor Tracking
   const spotlightCards = document.querySelectorAll('.spotlight-card');
