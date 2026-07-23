@@ -275,6 +275,34 @@ button {
   color: var(--text-poster-dark);
 }
 
+.section-poster-light .pain-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(200, 162, 76, 0.35);
+  box-shadow: 0 8px 24px rgba(12, 27, 58, 0.05);
+}
+
+.section-poster-light .pain-card p {
+  color: var(--text-poster-dark) !important;
+  font-weight: 500;
+}
+
+.section-poster-light .outcomes-list li {
+  background: #FFFFFF;
+  border: 1px solid rgba(200, 162, 76, 0.35);
+  border-left: 3px solid var(--accent-gold-dark);
+  box-shadow: 0 6px 18px rgba(12, 27, 58, 0.04);
+}
+
+.section-poster-light .outcomes-list li span {
+  color: var(--text-poster-dark) !important;
+  font-weight: 500;
+}
+
+.section-poster-light .check-icon {
+  color: var(--accent-gold-dark);
+  font-weight: bold;
+}
+
 .section-poster-light .quote-callout {
   background: linear-gradient(135deg, rgba(200, 162, 76, 0.12) 0%, rgba(248, 249, 250, 0.9) 100%);
   border: 1px solid var(--accent-gold-dark);
