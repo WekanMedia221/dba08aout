@@ -22,6 +22,13 @@
   --border-gold-strong: #C8A24C;
   --border-subtle: rgba(255, 255, 255, 0.1);
 
+  /* Light Poster Theme Tokens (Charte Officielle Affiche Jour) */
+  --bg-poster-light: #F8F9FA;
+  --bg-poster-light-card: #FFFFFF;
+  --text-poster-dark: #0C1B3A;
+  --text-poster-muted: #4A5568;
+  --border-poster-gold: rgba(200, 162, 76, 0.4);
+
   /* Fonts */
   --font-heading: 'Oswald', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -225,6 +232,56 @@ button {
 
 .section-dark {
   background-color: var(--bg-navy);
+}
+
+/* SECTION POSTER LIGHT (Charte Officielle Affiche Jour) */
+.section-poster-light {
+  background-color: var(--bg-poster-light);
+  color: var(--text-poster-dark);
+}
+
+.section-poster-light h1,
+.section-poster-light h2,
+.section-poster-light h3,
+.section-poster-light h4 {
+  color: var(--text-poster-dark);
+}
+
+.section-poster-light p {
+  color: var(--text-poster-muted);
+}
+
+.section-poster-light .section-intro {
+  color: var(--text-poster-muted);
+}
+
+.section-poster-light .suraccroche {
+  color: var(--accent-gold-dark);
+}
+
+.section-poster-light .section-counter-tag {
+  color: var(--accent-gold-dark);
+}
+
+.section-poster-light .gold-text {
+  color: var(--accent-gold-dark) !important;
+}
+
+.section-poster-light .light-card {
+  background: var(--bg-poster-light-card);
+  border: 1px solid rgba(200, 162, 76, 0.35);
+  box-shadow: 0 10px 30px rgba(12, 27, 58, 0.06);
+  border-radius: 8px;
+  color: var(--text-poster-dark);
+}
+
+.section-poster-light .quote-callout {
+  background: linear-gradient(135deg, rgba(200, 162, 76, 0.12) 0%, rgba(248, 249, 250, 0.9) 100%);
+  border: 1px solid var(--accent-gold-dark);
+}
+
+.section-poster-light .quote-text {
+  color: var(--text-poster-dark);
 }
 
 .section-bordered {
@@ -765,6 +822,58 @@ button {
   color: var(--bg-navy-dark);
   border-color: var(--accent-gold-light);
   transform: translateY(-2px);
+}
+
+/* FLASH INFO GRID (OÙ / QUAND / QUOI) */
+.flash-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.flash-info-card {
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  transition: var(--transition-normal);
+}
+
+.flash-info-card.featured-gold {
+  background: linear-gradient(135deg, #C8A24C 0%, #A47D2D 100%);
+  color: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(200, 162, 76, 0.3);
+}
+
+.flash-info-card.featured-gold h3,
+.flash-info-card.featured-gold p,
+.flash-info-card.featured-gold span,
+.flash-info-card.featured-gold .flash-tag {
+  color: #FFFFFF !important;
+}
+
+.flash-info-card:hover {
+  transform: translateY(-4px);
+}
+
+.flash-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.flash-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.flash-desc {
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 /* BANDEAU BAS CONTACT */
@@ -2225,7 +2334,7 @@ button {
     width: 100%;
   }
 
-  .foundations-grid, .experience-grid, .target-grid, .passes-grid, .outcomes-list, .practical-grid, .organizers-grid {
+  .flash-info-grid, .foundations-grid, .experience-grid, .target-grid, .passes-grid, .outcomes-list, .practical-grid, .organizers-grid {
     grid-template-columns: 1fr;
   }
 

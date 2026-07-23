@@ -197,20 +197,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentQuizStep = 1;
   let totalScore = 0;
-  const scoresByFoundation = { 1: 0, 2: 0, 3: 0 };
 
-  const optionBtns = document.querySelectorAll('.btn-option');
+  const optionBtns = document.querySelectorAll('.quiz-opt-btn');
   optionBtns.forEach(btn => {
     btn.addEventListener('click', function() {
-      const score = parseInt(this.getAttribute('data-score'));
-      scoresByFoundation[currentQuizStep] = score;
+      const score = parseInt(this.getAttribute('data-points')) || 1;
       totalScore += score;
 
-      const currentStepEl = document.querySelector(`.quiz-step[data-quiz="${currentQuizStep}"]`);
+      const currentStepEl = document.querySelector(`.quiz-step[data-step="${currentQuizStep}"]`);
       if (currentStepEl) currentStepEl.classList.add('d-none');
 
       currentQuizStep++;
-      const nextStepEl = document.querySelector(`.quiz-step[data-quiz="${currentQuizStep}"]`);
+      const nextStepEl = document.querySelector(`.quiz-step[data-step="${currentQuizStep}"]`);
 
       if (nextStepEl) {
         nextStepEl.classList.remove('d-none');
@@ -224,16 +222,15 @@ document.addEventListener('DOMContentLoaded', () => {
   function resetQuiz() {
     currentQuizStep = 1;
     totalScore = 0;
-    scoresByFoundation[1] = 0;
-    scoresByFoundation[2] = 0;
-    scoresByFoundation[3] = 0;
 
     document.querySelectorAll('.quiz-step').forEach(step => step.classList.add('d-none'));
-    const step1 = document.querySelector('.quiz-step[data-quiz="1"]');
+    const step1 = document.querySelector('.quiz-step[data-step="1"]');
     if (step1) step1.classList.remove('d-none');
 
-    document.getElementById('scorecardQuiz').classList.remove('d-none');
-    document.getElementById('scorecardResult').classList.add('d-none');
+    const quizContainer = document.getElementById('scorecardQuiz');
+    const resultContainer = document.getElementById('scorecardResult');
+    if (quizContainer) quizContainer.classList.remove('d-none');
+    if (resultContainer) resultContainer.classList.add('d-none');
   }
 
   function showQuizResults() {

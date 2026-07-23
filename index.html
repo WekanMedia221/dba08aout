@@ -13,7 +13,7 @@
   <meta property="og:description" content="Le rendez-vous des entrepreneurs, dirigeants et fondateurs à Dakar. Structuration · Organisation · Exécution.">
   <meta property="og:image" content="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80">
 
-  <!-- Google Fonts: Oswald (Titres & Accroches) & Inter (Corps de texte) -->
+  <!-- Google Fonts: Oswald & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-  <!-- Barre de progression du défilement (Instrument tactile) -->
+  <!-- Barre de progression du défilement -->
   <div class="scroll-progress-bar" id="scrollProgress"></div>
 
   <!-- Filigrane discret Monument de la Renaissance Africaine -->
@@ -56,17 +56,16 @@
     <nav class="mobile-nav">
       <a href="#constat" class="mobile-nav-link">Le Constat</a>
       <a href="#fondations" class="mobile-nav-link">Les 3 Fondations</a>
-      <a href="#experience" class="mobile-nav-link">Ce que vous allez vivre</a>
-      <a href="#deroule" class="mobile-nav-link">Le Déroulé</a>
-      <a href="#pour-qui" class="mobile-nav-link">Pour Qui ?</a>
+      <a href="#experience" class="mobile-nav-link">L'Expérience</a>
       <a href="#passes" class="mobile-nav-link">Les Pass</a>
+      <a href="#ecosysteme" class="mobile-nav-link">Organisateurs</a>
       <a href="#passes" class="btn btn-primary btn-full mt-4 mobile-nav-link">Réserver ma place →</a>
     </nav>
   </div>
 
   <main id="main-content">
 
-    <!-- SECTION 1 — HERO (DIRECTEMENT INSPIRÉ DES AFFICHES OFFICIELLES) -->
+    <!-- SECTION 1 — HERO (STYLE AFFICHE NUIT - SOMBRE) -->
     <section class="hero-section" id="hero">
       <div class="hero-glow"></div>
       <div class="container hero-container text-center">
@@ -111,15 +110,10 @@
           </p>
         </div>
 
-        <!-- ENCART INFOS CLÉS ÉDITION OFFICIELLE (Pill card bordure or) -->
+        <!-- ENCART INFOS CLÉS ÉDITION OFFICIELLE -->
         <div class="poster-info-pill">
           <div class="pill-col">
-            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-            </svg>
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
             <div class="pill-text">
               <strong>8 AOÛT</strong>
               <span>2026</span>
@@ -129,10 +123,7 @@
           <div class="pill-vdivider"></div>
 
           <div class="pill-col">
-            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             <div class="pill-text">
               <strong>17H GMT</strong>
               <span>DÉBUT</span>
@@ -142,10 +133,7 @@
           <div class="pill-vdivider"></div>
 
           <div class="pill-col">
-            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
             <div class="pill-text">
               <strong>IMPACT</strong>
               <span>HUB DAKAR</span>
@@ -153,7 +141,7 @@
           </div>
         </div>
 
-        <!-- BOUTON RÉSERVEZ VOTRE PLACE (Style Affiche) -->
+        <!-- BOUTON RÉSERVEZ VOTRE PLACE -->
         <div class="poster-cta-block">
           <a href="#passes" class="btn btn-poster-primary pulse-glow">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
@@ -185,144 +173,97 @@
       </div>
     </section>
 
-    <!-- SECTION 2 — LE CONSTAT -->
-    <section class="section section-dark reveal-on-scroll" id="constat">
+    <!-- SECTION 2 — INFOS CLÉS FLASH & LE CONSTAT (STYLE AFFICHE JOUR - FOND CLAIR) -->
+    <section class="section section-poster-light reveal-on-scroll" id="constat">
       <div class="container">
+        
+        <!-- BANDEAU FLASH INFO (QUAND / OÙ / QUOI) -->
+        <div class="flash-info-grid">
+          <div class="flash-info-card light-card">
+            <span class="flash-tag">📅 QUAND ?</span>
+            <h3 class="flash-title">8 AOÛT 2026</h3>
+            <p class="flash-desc">À partir de 17h00 GMT</p>
+          </div>
+          <div class="flash-info-card featured-gold">
+            <span class="flash-tag">📍 OÙ ?</span>
+            <h3 class="flash-title">IMPACT HUB DAKAR</h3>
+            <p class="flash-desc">Sénégal · Networking & MasterClass</p>
+          </div>
+          <div class="flash-info-card light-card">
+            <span class="flash-tag">🎯 QUOI ?</span>
+            <h3 class="flash-title">MASTERCLASS & AFTERWORK</h3>
+            <p class="flash-desc">Structuration · Organisation · Exécution</p>
+          </div>
+        </div>
+
         <div class="section-header text-center">
-          <div class="section-counter-tag">[ 02 / 11 ]</div>
-          <span class="suraccroche">LE CONSTAT</span>
+          <div class="section-counter-tag">[ 02 / 06 ]</div>
+          <span class="suraccroche">LE CONSTAT ENTREPRENEURIAL</span>
           <h2 class="section-title">
             Vous ne manquez pas d'informations. <br>
             <span class="gold-text">Vous manquez de fondations.</span>
           </h2>
           <p class="section-intro">
-            Les entrepreneurs d'aujourd'hui ont accès à tout : formations, vidéos, conférences, outils, stratégies. Jamais l'information n'a été aussi disponible.
+            Les entrepreneurs d'aujourd'hui ont accès à tout : formations, vidéos, conférences et outils. Pourtant, de nombreuses entreprises stagnent malgré les efforts.
           </p>
         </div>
 
         <div class="pain-points-grid">
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
-            </div>
-            <p>Une croissance qui ralentit ou qui stagne.</p>
+          <div class="pain-card light-card spotlight-card">
+            <div class="pain-icon">📉</div>
+            <p>Une croissance qui ralentit ou qui stagne après les premiers succès.</p>
           </div>
 
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-            </div>
-            <p>Une entreprise qui dépend entièrement de son fondateur.</p>
+          <div class="pain-card light-card spotlight-card">
+            <div class="pain-icon">👤</div>
+            <p>Une entreprise qui dépend entièrement de la présence physique du fondateur.</p>
           </div>
 
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-            </div>
-            <p>Une organisation interne floue.</p>
+          <div class="pain-card light-card spotlight-card">
+            <div class="pain-icon">⚙️</div>
+            <p>Une organisation interne floue et des processus non formalisés.</p>
           </div>
 
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 15 15"></polyline></svg>
-            </div>
-            <p>Une exécution irrégulière.</p>
-          </div>
-
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-            </div>
-            <p>Des décisions prises dans l'urgence.</p>
-          </div>
-
-          <div class="pain-card spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-            </div>
-            <p>Des efforts commerciaux qui ne débouchent pas sur une croissance durable.</p>
-          </div>
-
-          <div class="pain-card full-width spotlight-card">
-            <div class="pain-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M16 12l-4-4-4 4M12 8v8"/></svg>
-            </div>
-            <p>Une course permanente au prochain client ou au prochain outil, sans jamais traiter les causes profondes.</p>
+          <div class="pain-card light-card spotlight-card">
+            <div class="pain-icon">🔄</div>
+            <p>La course permanente aux nouveaux clients sans traiter les causes profondes.</p>
           </div>
         </div>
 
-        <!-- Phrase de bascule (mise en avant) -->
+        <!-- Citation clé de bascule -->
         <div class="quote-callout mt-5 reveal-on-scroll">
           <div class="quote-icon">“</div>
           <blockquote class="quote-text">
             Avant d'accélérer la croissance d'une entreprise, il faut d'abord en consolider les fondations.
           </blockquote>
         </div>
+
       </div>
     </section>
 
-    <!-- SECTION 3 — LE THÈME -->
-    <section class="section section-bordered" id="theme">
+    <!-- SECTION 3 — LES 3 FONDATIONS (STYLE AFFICHE NUIT - SOMBRE) -->
+    <section class="section section-dark reveal-on-scroll" id="fondations">
       <div class="container">
         <div class="section-header text-center">
-          <span class="suraccroche">LE THÈME DE CETTE ÉDITION</span>
+          <div class="section-counter-tag">[ 03 / 06 ]</div>
+          <span class="suraccroche">LE THÈME CENTRAL</span>
           <h2 class="section-title">
             Les 3 fondations d'une entreprise à <span class="gold-text">croissance durable</span>
           </h2>
-        </div>
-
-        <!-- Les trois piliers (grands blocs côte à côte) -->
-        <div class="pillars-showcase">
-          <div class="pillar-box">
-            <div class="pillar-num">01</div>
-            <h3 class="pillar-name">STRUCTURATION</h3>
-            <span class="pillar-line"></span>
-          </div>
-
-          <div class="pillar-separator">·</div>
-
-          <div class="pillar-box">
-            <div class="pillar-num">02</div>
-            <h3 class="pillar-name">ORGANISATION</h3>
-            <span class="pillar-line"></span>
-          </div>
-
-          <div class="pillar-separator">·</div>
-
-          <div class="pillar-box">
-            <div class="pillar-num">03</div>
-            <h3 class="pillar-name">EXÉCUTION</h3>
-            <span class="pillar-line"></span>
-          </div>
-        </div>
-
-        <div class="theme-description">
-          <p>
-            La croissance durable ne repose pas seulement sur le marketing, l'acquisition de clients ou l'adoption d'un nouvel outil. Elle dépend de la capacité de votre entreprise à tenir sur trois fondations. Quand l'une d'elles est fragile, tout le reste finit par le ressentir.
+          <p class="section-intro">
+            La croissance durable ne repose pas sur le hasard. Elle dépend de l'équilibre solide de trois piliers indispensables.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4 — LES TROIS FONDATIONS (en détail) -->
-    <section class="section" id="fondations">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="suraccroche">ANALYSE EN DÉTAIL</span>
-          <h2 class="section-title">
-            Trois fondations. Un seul objectif : <span class="gold-text">une croissance qui tient.</span>
-          </h2>
         </div>
 
         <div class="foundations-grid">
           <!-- Fondation 01 -->
-          <div class="foundation-card" data-step="1">
+          <div class="foundation-card spotlight-card" data-step="1">
             <div class="foundation-header">
               <span class="foundation-badge">01</span>
               <h3 class="foundation-title">Se structurer</h3>
             </div>
             <p class="foundation-body">
-              Clarifier son modèle, ses responsabilités, ses ressources, sa gestion et ses priorités. Une entreprise structurée sait <strong>qui fait quoi</strong>, avec <strong>quels moyens</strong>, et <strong>dans quel but</strong>.
+              Clarifier son modèle économique, ses responsabilités, sa gestion financière et ses priorités. Savoir <strong>qui fait quoi</strong> et avec <strong>quels moyens</strong>.
             </p>
             <div class="foundation-footer">
               <span class="foundation-tag">Clarté & Vision</span>
@@ -330,13 +271,13 @@
           </div>
 
           <!-- Fondation 02 -->
-          <div class="foundation-card" data-step="2">
+          <div class="foundation-card spotlight-card" data-step="2">
             <div class="foundation-header">
               <span class="foundation-badge">02</span>
               <h3 class="foundation-title">S'organiser</h3>
             </div>
             <p class="foundation-body">
-              Mettre en place les méthodes, les processus, les outils et la coordination qui permettent à l'entreprise de fonctionner — <strong>même quand le dirigeant n'est pas dans la pièce</strong>.
+              Mettre en place les méthodes, les outils et la coordination qui permettent à l'entreprise d'opérer — <strong>même sans la présence du dirigeant</strong>.
             </p>
             <div class="foundation-footer">
               <span class="foundation-tag">Processus & Autonomie</span>
@@ -344,277 +285,93 @@
           </div>
 
           <!-- Fondation 03 -->
-          <div class="foundation-card" data-step="3">
+          <div class="foundation-card spotlight-card" data-step="3">
             <div class="foundation-header">
               <span class="foundation-badge">03</span>
               <h3 class="foundation-title">Exécuter</h3>
             </div>
             <p class="foundation-body">
-              Transformer les décisions et les stratégies en <strong>actions concrètes, régulières et mesurables</strong>. Sans exécution, la meilleure stratégie reste une intention.
+              Transformer les décisions et les visions en <strong>actions concrètes, régulières et mesurables</strong> au quotidien.
             </p>
             <div class="foundation-footer">
               <span class="foundation-tag">Discipline & Résultats</span>
             </div>
           </div>
         </div>
-
-        <div class="quote-callout secondary-quote mt-5">
-          <blockquote class="quote-text">
-            Votre entreprise possède probablement un potentiel encore inexploité. Mais ce potentiel restera limité tant que ces fondations ne seront pas solides.
-          </blockquote>
-        </div>
       </div>
     </section>
 
-    <!-- SECTION 5 — CE QUE VOUS ALLEZ VIVRE -->
-    <section class="section section-dark" id="experience">
+    <!-- SECTION 4 — L'EXPÉRIENCE & BÉNÉFICES (STYLE AFFICHE JOUR - FOND CLAIR) -->
+    <section class="section section-poster-light reveal-on-scroll" id="experience">
       <div class="container">
         <div class="section-header text-center">
-          <span class="suraccroche">UNE EXPÉRIENCE EN TROIS TEMPS</span>
+          <div class="section-counter-tag">[ 04 / 06 ]</div>
+          <span class="suraccroche">CE QUE VOUS ALLEZ VIVRE</span>
           <h2 class="section-title">
             Apprendre. Échanger. <span class="gold-text">Agir.</span>
           </h2>
+          <p class="section-intro">
+            Une soirée interactive structurée pour vous apporter de la valeur concrète dès le lendemain.
+          </p>
         </div>
 
         <div class="experience-grid">
-          <div class="exp-card">
+          <div class="exp-card light-card">
             <div class="exp-number">01</div>
-            <div class="exp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-              </svg>
-            </div>
             <h3 class="exp-title">Apprendre</h3>
-            <p class="exp-desc">
-              Découvrir une méthode claire et des enseignements directement applicables à votre entreprise dès le lendemain.
-            </p>
+            <p class="exp-desc">Une méthode de structuration claire transmise lors de la MasterClass principale.</p>
           </div>
 
-          <div class="exp-card">
+          <div class="exp-card light-card">
             <div class="exp-number">02</div>
-            <div class="exp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
             <h3 class="exp-title">Échanger</h3>
-            <p class="exp-desc">
-              Partager avec d'autres entrepreneurs, dirigeants et experts confrontés aux mêmes enjeux et réalités que vous.
-            </p>
+            <p class="exp-desc">Partager avec des dirigeants, entrepreneurs et experts confrontés aux mêmes enjeux.</p>
           </div>
 
-          <div class="exp-card">
+          <div class="exp-card light-card">
             <div class="exp-number">03</div>
-            <div class="exp-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
             <h3 class="exp-title">Agir</h3>
-            <p class="exp-desc">
-              Repartir avec des décisions stratégiques, des pistes d'amélioration claires et des actions concrètes.
-            </p>
+            <p class="exp-desc">Repartir avec des pistes d'amélioration concrètes et une feuille de route claire.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- SECTION 6 — CE QUE VOUS REPARTIREZ EN AYANT FAIT -->
-    <section class="section" id="benefices">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="suraccroche">BÉNÉFICES CONCRETS</span>
-          <h2 class="section-title">
-            À la fin de la soirée, <span class="gold-text">vous serez en mesure de…</span>
-          </h2>
-        </div>
-
-        <div class="outcomes-wrapper">
+        <!-- Bénéfices concrètes -->
+        <div class="outcomes-wrapper mt-5">
+          <div class="text-center mb-4">
+            <h3 class="section-title" style="font-size: 1.5rem;">À la fin de la soirée, <span class="gold-text">vous serez en mesure de…</span></h3>
+          </div>
           <ul class="outcomes-list">
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Comprendre pourquoi votre entreprise rencontre certaines difficultés.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Identifier les causes profondes de votre stagnation.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Découvrir les trois fondations d'une croissance durable.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Évaluer les forces et les faiblesses actuelles de votre entreprise.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Repartir avec des pistes d'amélioration concrètes.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Rencontrer des entrepreneurs, des dirigeants et des experts.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Identifier de nouvelles possibilités de collaboration et de partenariat.</span>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <span>Découvrir l'écosystème Dakar Business Masterclass.</span>
-            </li>
+            <li><span class="check-icon">✓</span> <span>Identifier les véritables causes de votre stagnation.</span></li>
+            <li><span class="check-icon">✓</span> <span>Évaluer la solidité de vos 3 fondations actuelles.</span></li>
+            <li><span class="check-icon">✓</span> <span>Repartir avec des solutions directement applicables.</span></li>
+            <li><span class="check-icon">✓</span> <span>Rencontrer des partenaires et futurs collaborateurs.</span></li>
+            <li><span class="check-icon">✓</span> <span>Accéder au réseau exclusif Dakar Business Masterclass.</span></li>
           </ul>
         </div>
-      </div>
-    </section>
 
-    <!-- SECTION 7 — LE DÉROULÉ & SCORECARD INTERACTIF -->
-    <section class="section section-dark" id="deroule">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="suraccroche">AU PROGRAMME</span>
-          <h2 class="section-title">
-            Une soirée pensée pour <span class="gold-text">vous faire avancer</span>
-          </h2>
-          <p class="section-subtext"><em>(Ordre indicatif · horaires détaillés communiqués prochainement)</em></p>
-        </div>
-
-        <!-- Schedule Timeline -->
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-marker">01</div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Accueil & networking guidé</h3>
-              <p>Vos premières connexions de la soirée, facilitées dès votre arrivée.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-marker">02</div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Ouverture</h3>
-              <p>La vision du Dakar Business Masterclass et la raison d'être de l'Afterwork.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item highlight">
-            <div class="timeline-marker">03</div>
-            <div class="timeline-content">
-              <span class="badge-gold">Temps Fort</span>
-              <h3 class="timeline-title">Masterclass principale</h3>
-              <p>Pourquoi certaines entreprises grandissent pendant que d'autres stagnent — et les trois fondations qui font la différence : <strong>Structuration, Organisation, Exécution</strong>.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-marker">04</div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Table ronde</h3>
-              <p>Des entrepreneurs et des experts partagent leurs exemples concrets et leurs retours d'expérience du terrain.</p>
-            </div>
-          </div>
-
-          <div class="timeline-item highlight">
-            <div class="timeline-marker">05</div>
-            <div class="timeline-content">
-              <span class="badge-gold">Outil Exclusif</span>
-              <h3 class="timeline-title">Diagnostic collectif</h3>
-              <p>Un premier outil d'évaluation pour situer votre entreprise sur les trois fondations (<em>Business Scorecard DBM</em>).</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-marker">06</div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">Networking business</h3>
-              <p>Des mises en relation ciblées et orientées collaborations, partenariats et opportunités commerciales.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Interactive Scorecard Teaser Widget -->
-        <div class="scorecard-teaser-card mt-5">
-          <div class="teaser-header">
-            <span class="suraccroche">OUTIL EN AVANT-PREMIÈRE</span>
-            <h3 class="teaser-title">Évaluez vos 3 Fondations dès maintenant</h3>
-            <p>Faites le test express en 3 questions pour identifier votre axe prioritaire.</p>
-          </div>
+        <!-- Outil Scorecard Teaser -->
+        <div class="scorecard-teaser-card light-card mt-5 text-center">
+          <span class="suraccroche">OUTIL EXCLUSIF DBM</span>
+          <h3 class="teaser-title">Évaluez vos 3 Fondations en 1 Minute</h3>
+          <p>Répondez au questionnaire rapide pour situer votre entreprise.</p>
           <button class="btn btn-secondary btn-sm mt-3" id="openScorecardBtn">
             ⚡ Lancer le diagnostic rapide (1 min)
           </button>
         </div>
+
       </div>
     </section>
 
-    <!-- SECTION 8 — POUR QUI ? -->
-    <section class="section" id="pour-qui">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="suraccroche">PROFIL DES PARTICIPANTS</span>
-          <h2 class="section-title">
-            Cet événement est <span class="gold-text">fait pour vous si…</span>
-          </h2>
-          <p class="section-intro">
-            Vous avez déjà lancé votre activité, mais vous butez sur des difficultés de structuration, d'organisation ou d'exécution.
-          </p>
-        </div>
-
-        <div class="target-grid">
-          <div class="target-box primary-target">
-            <div class="target-badge">Priorité Absolue</div>
-            <h3 class="target-heading">S'adresse en priorité aux :</h3>
-            <ul class="target-list">
-              <li>
-                <svg viewBox="0 0 24 24" class="gold-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <strong>Entrepreneurs et fondateurs</strong>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" class="gold-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <strong>Dirigeants de PME</strong>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" class="gold-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                <strong>Porteurs de projets</strong> déjà engagés dans le développement de leur activité
-              </li>
-            </ul>
-          </div>
-
-          <div class="target-box secondary-target">
-            <div class="target-badge muted">Également ouvert</div>
-            <h3 class="target-heading">Également ouvert aux :</h3>
-            <ul class="target-list">
-              <li>
-                <svg viewBox="0 0 24 24" class="gray-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Consultants, freelances et managers
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" class="gray-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Experts business et jeunes professionnels
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" class="gray-check" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-                Partenaires et acteurs de l'écosystème entrepreneurial
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 9 — LES PASS -->
+    <!-- SECTION 5 — LES PASS & BILLETTERIE (STYLE AFFICHE NUIT - SOMBRE) -->
     <section class="section section-dark reveal-on-scroll" id="passes">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-counter-tag">[ 09 / 11 ]</div>
+          <div class="section-counter-tag">[ 05 / 06 ]</div>
           <span class="suraccroche">BILLETTERIE & FORMULES OFFICIELLES</span>
           <h2 class="section-title">
             Choisissez votre <span class="gold-text">formule d'accès</span>
           </h2>
-          <p class="section-subtext">Places réservées pour garantir des échanges à haute valeur ajoutée.</p>
+          <p class="section-subtext">Places limitées pour garantir un cadre d'échanges d'exception.</p>
         </div>
 
         <div class="passes-grid">
@@ -625,7 +382,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
               </div>
               <h3 class="pass-name">PASS EXPLORER</h3>
-              <p class="pass-desc">Destiné aux entrepreneurs et professionnels souhaitant découvrir l'expérience DBM, développer leur réseau et participer au Dakar Business Afterwork.</p>
+              <p class="pass-desc">Pour découvrir l'expérience DBM, développer son réseau et participer au Dakar Business Afterwork.</p>
             </div>
             <div class="pass-price">
               <span class="price-val">10 000</span>
@@ -634,8 +391,7 @@
             <ul class="pass-features">
               <li><span class="check-icon">✓</span> <span>Accès au Dakar Business Afterwork</span></li>
               <li><span class="check-icon">✓</span> <span>Participation aux échanges avec les intervenants</span></li>
-              <li><span class="check-icon">✓</span> <span>Session de networking</span></li>
-              <li><span class="check-icon">✓</span> <span>Accès à la collation</span></li>
+              <li><span class="check-icon">✓</span> <span>Session de networking & collation</span></li>
               <li><span class="check-icon">✓</span> <span>Accès à la communauté DBM Afterwork</span></li>
               <li><span class="check-icon">✓</span> <span>Opportunités de rencontres professionnelles</span></li>
             </ul>
@@ -653,7 +409,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
               </div>
               <h3 class="pass-name">PASS BUILDER</h3>
-              <p class="pass-desc">Pensé pour les entrepreneurs souhaitant aller plus loin et repartir avec des outils concrets afin de mettre rapidement en pratique les enseignements de l'événement.</p>
+              <p class="pass-desc">Pour repartir avec des outils concrets afin de mettre rapidement en pratique les enseignements.</p>
             </div>
             <div class="pass-price">
               <span class="price-val gold-text">15 000</span>
@@ -662,9 +418,8 @@
             <ul class="pass-features">
               <li><span class="check-icon">✓</span> <span><strong>Tous les avantages du PASS EXPLORER</strong></span></li>
               <li><span class="check-icon">✓</span> <span>Places prioritaires</span></li>
-              <li><span class="check-icon">✓</span> <span>Photo officielle</span></li>
-              <li><span class="check-icon">✓</span> <span>Session Questions/Réponses privée</span></li>
-              <li><span class="check-icon">✓</span> <span>Une <strong>DBM Growth Session exclusive</strong> (MasterClass sur la publicité Facebook animée par un expert)</span></li>
+              <li><span class="check-icon">✓</span> <span>Photo officielle & Q/R privée</span></li>
+              <li><span class="check-icon">✓</span> <span>Une <strong>DBM Growth Session exclusive</strong> (MasterClass Meta Ads)</span></li>
             </ul>
 
             <a href="https://bit.ly/DBA_01" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full">
@@ -679,7 +434,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l3 12h14l3-12-6 7-4-5-4 5-6-7z"></path><path d="M4 20h16"></path></svg>
               </div>
               <h3 class="pass-name">PASS LEADER OU CEO</h3>
-              <p class="pass-desc">Destiné aux entrepreneurs et dirigeants souhaitant intégrer pleinement l'écosystème DBM et bénéficier d'un accompagnement continu.</p>
+              <p class="pass-desc">Pour intégrer pleinement l'écosystème DBM et bénéficier d'un accompagnement continu.</p>
             </div>
             <div class="pass-price">
               <span class="price-val gold-text">30 000</span>
@@ -690,9 +445,7 @@
               <li><span class="check-icon">✓</span> <span>Accès à la <strong>DBM Community pendant 12 mois</strong></span></li>
               <li><span class="check-icon">✓</span> <span>Une masterclass exclusive chaque mois</span></li>
               <li><span class="check-icon">✓</span> <span>Ressources premium réservées aux membres</span></li>
-              <li><span class="check-icon">✓</span> <span>Networking privé entre dirigeants et entrepreneurs</span></li>
-              <li><span class="check-icon">✓</span> <span>Accès prioritaire aux prochains événements DBM</span></li>
-              <li><span class="check-icon">✓</span> <span>Opportunités de collaboration et de développement d'affaires</span></li>
+              <li><span class="check-icon">✓</span> <span>Networking privé & accès prioritaire événements</span></li>
             </ul>
 
             <a href="https://bit.ly/DBA_01" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold btn-full">
@@ -703,109 +456,59 @@
       </div>
     </section>
 
-    <!-- SECTION 10 — L'ÉCOSYSTÈME -->
-    <section class="section section-bordered" id="ecosysteme">
+    <!-- SECTION 6 — ÉCOSYSTÈME, ORGANISATEURS & FOOTER (STYLE AFFICHE JOUR & FOOTER SOMBRE) -->
+    <section class="section section-poster-light reveal-on-scroll" id="ecosysteme">
       <div class="container text-center">
-        <div class="ecosystem-card">
+        <div class="ecosystem-card light-card">
           <span class="suraccroche">VISION DAKAR BUSINESS MASTERCLASS</span>
           <h2 class="section-title">
             Le point de départ d'une <span class="gold-text">aventure plus grande</span>
           </h2>
           <p class="ecosystem-text">
-            Le Dakar Business Afterwork est le premier rendez-vous de l'écosystème <strong>Dakar Business Masterclass (DBM)</strong> : un espace régulier réunissant entrepreneurs, dirigeants, experts et partenaires autour de contenus pratiques, de diagnostics et de connexions professionnelles utiles.
-          </p>
-          <p class="ecosystem-text highlight-p">
-            Cette première édition pose les bases d'une communauté d'entrepreneurs engagés — et prépare les prochains rendez-vous du DBM.
+            Le Dakar Business Afterwork est le premier rendez-vous de l'écosystème <strong>Dakar Business Masterclass (DBM)</strong> : un espace réunissant entrepreneurs, dirigeants, experts et partenaires autour de contenus pratiques et de connexions utiles.
           </p>
         </div>
 
         <!-- BLOC ORGANISATEURS OFFICIELS -->
-        <div class="organizers-wrapper mt-5 reveal-on-scroll">
+        <div class="organizers-wrapper mt-5">
           <span class="suraccroche">ÉVÉNEMENT CO-ORGANISÉ PAR</span>
-          <h3 class="organizers-subtitle mb-4">Trois structures engagées pour l'excellence et la croissance des entreprises</h3>
+          <h3 class="organizers-subtitle mb-4">Trois structures engagées pour la croissance des entreprises</h3>
           
           <div class="organizers-grid">
             <!-- Nema Group -->
-            <div class="organizer-card spotlight-card">
+            <div class="organizer-card light-card spotlight-card">
               <div class="org-logo-container">
-                <img src="./src/organizers/nema-group.png" alt="Logo Nema Group" class="org-logo-img">
+                <img src="./src/organizers/nema-group.png" alt="Logo Nema Group" class="org-logo">
               </div>
               <h4 class="org-name">NEMA GROUP</h4>
-              <span class="org-role">Co-organisateur Officiel</span>
+              <p class="org-desc">Cabinet spécialisé en conseil, organisation et accompagnement stratégique des entreprises.</p>
             </div>
 
             <!-- Wekan Media -->
-            <div class="organizer-card spotlight-card">
+            <div class="organizer-card light-card spotlight-card">
               <div class="org-logo-container">
-                <img src="./src/organizers/wekan-media.jpg" alt="Logo Wekan Media" class="org-logo-img">
+                <img src="./src/organizers/wekan-media.jpg" alt="Logo Wekan Media" class="org-logo">
               </div>
               <h4 class="org-name">WEKAN MEDIA</h4>
-              <span class="org-role">Co-organisateur Officiel</span>
+              <p class="org-desc">Agence média & création de contenus impactants pour les marques et dirigeants d'Afrique.</p>
             </div>
 
             <!-- Roar's Academy -->
-            <div class="organizer-card spotlight-card">
+            <div class="organizer-card light-card spotlight-card">
               <div class="org-logo-container">
-                <img src="./src/organizers/roars-academy.jpg" alt="Logo Roar's Academy" class="org-logo-img">
+                <img src="./src/organizers/roars-academy.jpg" alt="Logo Roar's Academy" class="org-logo">
               </div>
               <h4 class="org-name">ROAR'S ACADEMY</h4>
-              <span class="org-role">Co-organisateur Officiel</span>
+              <p class="org-desc">Académie de formation et de renforcement des compétences entrepreneuriales et managériales.</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 11 — INFOS PRATIQUES & CTA FINAL -->
-    <section class="section section-dark" id="pratique">
-      <div class="container">
-        <div class="final-cta-wrapper text-center">
-          <span class="suraccroche">RÉSERVATION ÉDITION #1</span>
-          <h2 class="section-title main-final-heading">
-            Prêt à consolider les <br>
-            <span class="gold-text">fondations de votre entreprise ?</span>
-          </h2>
-
-          <!-- Grille des détails pratiques -->
-          <div class="practical-grid">
-            <div class="prac-card">
-              <div class="prac-icon">📅</div>
-              <span class="prac-label">DATE</span>
-              <strong>8 août 2026</strong>
-            </div>
-            <div class="prac-card">
-              <div class="prac-icon">🕔</div>
-              <span class="prac-label">HEURE</span>
-              <strong>17h00 GMT</strong>
-            </div>
-            <div class="prac-card">
-              <div class="prac-icon">📍</div>
-              <span class="prac-label">LIEU</span>
-              <strong>Impact Hub Dakar</strong>
-            </div>
-            <div class="prac-card">
-              <div class="prac-icon">📞</div>
-              <span class="prac-label">CONTACT</span>
-              <a href="tel:+221781830516" class="contact-link">+221 78 183 05 16</a>
-            </div>
-          </div>
-
-          <div class="mt-5">
-            <a href="#passes" class="btn btn-primary btn-xl pulse-glow">
-              Réserver ma place <span class="arrow">→</span>
-            </a>
-          </div>
-
-          <p class="final-reminder mt-4">
-            <strong>Dakar Business Afterwork · Édition #1</strong> · Le grand rendez-vous des entrepreneurs.
-          </p>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- PIED DE PAGE / FOOTER INSTITUTIONNEL -->
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-brand">
@@ -819,7 +522,7 @@
     </div>
   </footer>
 
-  <!-- BARRE STICKY MOBILE CTA (Visible sur mobile au scroll) -->
+  <!-- BARRE STICKY MOBILE CTA -->
   <div class="mobile-sticky-bar" id="mobileStickyBar">
     <div class="sticky-info">
       <span class="sticky-title">DBA Édition #1</span>
@@ -830,79 +533,7 @@
     </a>
   </div>
 
-  <!-- MODAL DE RÉSERVATION / SELECTION DE PASS -->
-  <div class="modal-backdrop" id="bookingModal">
-    <div class="modal-container">
-      <button class="modal-close" id="modalCloseBtn" aria-label="Fermer la fenêtre">&times;</button>
-      
-      <div class="modal-header text-center">
-        <div class="modal-icon">🎫</div>
-        <h3 class="modal-title">Réserver votre Pass DBA #1</h3>
-        <p class="modal-subtitle">Inscrivez-vous pour sécuriser votre place à l'Impact Hub Dakar.</p>
-      </div>
-
-      <form id="bookingForm" class="booking-form">
-        <div class="form-group">
-          <label for="passSelection">Formule d'accès choisie</label>
-          <select id="passSelection" class="form-control" required>
-            <option value="Pass Explorer - 10 000 FCFA">Pass Explorer — 10 000 FCFA</option>
-            <option value="Pass Builder - 15 000 FCFA">Pass Builder — 15 000 FCFA (Recommandé)</option>
-            <option value="Pass Leader / CEO - 30 000 FCFA">Pass Leader / CEO — 30 000 FCFA</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="fullName">Nom & Prénom</label>
-          <input type="text" id="fullName" class="form-control" placeholder="ex: Amadou Diallo" required>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label for="userEmail">Adresse Email</label>
-            <input type="email" id="userEmail" class="form-control" placeholder="votre.email@domaine.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="userPhone">Téléphone (WhatsApp)</label>
-            <input type="tel" id="userPhone" class="form-control" placeholder="+221 77 000 00 00" required>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="companyName">Nom de votre entreprise / projet</label>
-          <input type="text" id="companyName" class="form-control" placeholder="ex: Cabinet DBM Services">
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full mt-3">
-          Confirmer ma réservation →
-        </button>
-        <p class="form-privacy text-center">🔒 Vos informations sont confidentielles. Validation instantanée par SMS/Email.</p>
-      </form>
-
-      <!-- Confirmation Screen Inside Modal -->
-      <div id="bookingConfirmation" class="booking-confirmation d-none">
-        <div class="success-icon">🎉</div>
-        <h3>Réservation Enregistrée !</h3>
-        <p>Merci <strong id="confName"></strong>. Votre sélection pour le <strong id="confPass"></strong> a été prise en compte.</p>
-        <div class="conf-summary">
-          <div><span>Formule choisie :</span> <strong id="confPass"></strong></div>
-          <div><span>Lieu :</span> <strong>Impact Hub Dakar</strong></div>
-          <div><span>Date :</span> <strong>8 août 2026 à 17h00 GMT</strong></div>
-        </div>
-
-        <div class="redirect-notice mt-3">
-          <p class="gold-text"><strong>⚡ Redirection automatique en cours vers la plateforme officielle de paiement...</strong></p>
-        </div>
-
-        <a href="https://bit.ly/DBA_01" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full mt-3 pulse-glow" id="directRedirectLink">
-          Finaliser mon paiement sur bit.ly/DBA_01 →
-        </a>
-        <button class="btn btn-outline btn-full mt-3" id="closeConfBtn">Fermer</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL SCORECARD DIAGNOSTIC INTERACTIF -->
+  <!-- MODAL SCORECARD QUIZ -->
   <div class="modal-backdrop" id="scorecardModal">
     <div class="modal-container">
       <button class="modal-close" id="scorecardCloseBtn" aria-label="Fermer la fenêtre">&times;</button>
@@ -910,56 +541,44 @@
       <div class="modal-header text-center">
         <div class="modal-icon">📊</div>
         <h3 class="modal-title">Business Scorecard DBM</h3>
-        <p class="modal-subtitle">Auto-évaluation express des 3 fondations de votre entreprise</p>
+        <p class="modal-subtitle">Évaluez vos 3 Fondations en 3 questions rapides.</p>
       </div>
 
       <div id="scorecardQuiz" class="scorecard-quiz">
-        <div class="quiz-step" data-quiz="1">
-          <h4>1. Structuration</h4>
-          <p class="quiz-q">Votre modèle d'affaires, vos rôles internes et vos objectifs annuels sont-ils clairement documentés et compris par tous ?</p>
+        <div class="quiz-step active" data-step="1">
+          <h4>1. Votre structuration (Clarté & Modèle) :</h4>
           <div class="quiz-options">
-            <button class="btn-option" data-score="1">1 - Flou total ou uniquement dans la tête du fondateur</button>
-            <button class="btn-option" data-score="2">2 - Partiellement défini, mais manque de clarté</button>
-            <button class="btn-option" data-score="3">3 - Totalement structuré et formalisé</button>
+            <button type="button" class="quiz-opt-btn" data-points="1">Floue — tout repose sur ma mémoire au jour le jour.</button>
+            <button type="button" class="quiz-opt-btn" data-points="2">Moyenne — nous avons quelques priorités mais pas de vision à 1 an.</button>
+            <button type="button" class="quiz-opt-btn" data-points="3">Solide — les rôles et priorités sont clairs pour tous.</button>
           </div>
         </div>
 
-        <div class="quiz-step d-none" data-quiz="2">
-          <h4>2. Organisation</h4>
-          <p class="quiz-q">Si vous vous absentez pendant 3 semaines sans téléphone, votre entreprise continue-t-elle de tourner normalement ?</p>
+        <div class="quiz-step d-none" data-step="2">
+          <h4>2. Votre organisation (Autonomie) :</h4>
           <div class="quiz-options">
-            <button class="btn-option" data-score="1">1 - Impossible, tout s'arrête sans moi</button>
-            <button class="btn-option" data-score="2">2 - Ça tourne mais avec des blocages majeurs</button>
-            <button class="btn-option" data-score="3">3 - Parfaitement, les processus sont autonomes</button>
+            <button type="button" class="quiz-opt-btn" data-points="1">Si je ne suis pas là, l'activité s'arrête net.</button>
+            <button type="button" class="quiz-opt-btn" data-points="2">L'équipe tourne 2 jours mais a besoin de moi pour chaque décision.</button>
+            <button type="button" class="quiz-opt-btn" data-points="3">Des processus formalisés permettent l'autonomie.</button>
           </div>
         </div>
 
-        <div class="quiz-step d-none" data-quiz="3">
-          <h4>3. Exécution</h4>
-          <p class="quiz-q">Vos objectifs trimestriels sont-ils déclinés en plans d'actions exécutés avec rigueur chaque semaine ?</p>
+        <div class="quiz-step d-none" data-step="3">
+          <h4>3. Votre exécution (Discipline & Résultats) :</h4>
           <div class="quiz-options">
-            <button class="btn-option" data-score="1">1 - Non, nous gérons tout dans l'urgence au quotidien</button>
-            <button class="btn-option" data-score="2">2 - Parfois, mais l'exécution est très irrégulière</button>
-            <button class="btn-option" data-score="3">3 - Oui, suivi strict et mesure régulière des résultats</button>
+            <button type="button" class="quiz-opt-btn" data-points="1">Irrégulière — beaucoup d'idées, peu d'actions abouties.</button>
+            <button type="button" class="quiz-opt-btn" data-points="2">Standard — nous exécutons sous la pression des urgences.</button>
+            <button type="button" class="quiz-opt-btn" data-points="3">Rigoureuse — les objectifs sont suivis et mesurés chaque semaine.</button>
           </div>
         </div>
       </div>
 
+      <!-- Résultat Scorecard -->
       <div id="scorecardResult" class="scorecard-result d-none text-center">
-        <div class="result-score-circle">
-          <span id="finalScoreVal">0</span>/9
-        </div>
-        <h4 id="resultDiagnosisTitle">Résultat de votre évaluation</h4>
-        <p id="resultDiagnosisText" class="result-desc"></p>
-
-        <div class="result-box mt-3">
-          <p class="gold-text"><strong>Rendez-vous au Dakar Business Afterwork #1</strong></p>
-          <p>Profitez du diagnostic approfondi et de la masterclass dédiée pour corriger ces points critiques.</p>
-        </div>
-
-        <a href="https://bit.ly/DBA_01" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-full mt-4">
-          Réserver mon Pass sur bit.ly/DBA_01 →
-        </a>
+        <div class="result-badge mb-2">VOTRE SCORE : <span id="finalScoreVal">0</span> / 9</div>
+        <h4 id="resultDiagnosisTitle" class="gold-text mb-2">Diagnostic</h4>
+        <p id="resultDiagnosisText" class="mb-4">Analyse...</p>
+        <a href="#passes" id="resultCtaBtn" class="btn btn-primary btn-full">Réserver mon Pass DBA #1 →</a>
       </div>
 
     </div>
